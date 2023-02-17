@@ -46,12 +46,12 @@
         <div class="card card-compact w-full bg-base-100 shadow-xl">
           <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Coffee JS</h2>
+            <h2 id="first-name" class="card-title">Coffee JS</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
-            <p>Price: $<span>110</span></p>
-            <p>Quantity: <span>5</span></p>
+            <p>Price: $<span id="first-price">110</span></p>
+            <p>Quantity: <span id="first-quantity">5</span></p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Add to cart</button>
+              <button id="first-card" class="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
@@ -63,19 +63,19 @@
             <p>Price: $<span>200</span></p>
             <p>Quantity: <span>10</span></p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Add to cart</button>
+              <button id="second-card" class="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
         <div class="card card-compact w-full bg-base-100 shadow-xl">
-          <figure><img class="w-full h-40" src="./img/umbrella.png" alt="Shoes" /></figure>
+          <figure><img class="w-full h-40" src="./img/panda.png" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Panda JS</h2>
+            <h2 id="third-name" class="card-title">Panda JS</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
-            <p>Price: $<span>250</span></p>
-            <p>Quantity: <span>5</span></p>
+            <p>Price: $<span id="third-price">250</span></p>
+            <p>Quantity: <span id="third-quantity">5</span></p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Add to cart</button>
+              <button id="third-card" class="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
@@ -94,14 +94,14 @@
         <div class="card card-compact w-full bg-base-100 shadow-xl">
           <figure><img class="w-full h-40" src="./img/vue-js.jpg" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Vue JS</h2>
+            <h2 id="last-title" class="card-title">Vue JS</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <!-- <p>Price: $<span>400</span></p>
             <p>Quantity: <span>3</span></p> -->
-            <input type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
-            <input type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+            <input id="last-price" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+            <input id="last-quantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Add to cart</button>
+              <button id="last-card" class="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
@@ -116,20 +116,21 @@
                 <th>NO</th>
                 <th>Name</th>
                 <th>Price</th>
+                <th>Quantity</th>
                 <th>Total</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- row 1 -->
+            <tbody id="table-container">
               <!-- <tr>
-                <th>1</th>
-                <td>Cy Ganderton</td>
-                <td>Quality Control Specialist</td>
-                <td>Blue</td>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr> -->
             </tbody>
           </table>
         </div>
+        <h1 class="text-lg text-center font-bold">Total Price: $<span id="total-price">0</span></h1>
       </div>
     </section>
   </main>
